@@ -9,7 +9,7 @@ const  readStream = (inputPath) => {
 
 const writeStream = (outputPath) => { 
     if (!outputPath) return process.stdout
-    return createWriteStream('output.txt')
+    return createWriteStream('output.txt', { flags :'a'})
 };
 const transformStream = (shift, action) => {
 
