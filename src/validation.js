@@ -1,3 +1,4 @@
+/* eslint-disable no-process-exit */
 import Fs from 'fs';
 
 const isFileAccess = (file) => Fs.existsSync(file);
@@ -5,7 +6,7 @@ const isFileAccess = (file) => Fs.existsSync(file);
 const checkIsValid = ({ input, output, shift, action }) => {
 
     if (!shift) {
-        process.stderr.write('ERROR: Shift flag is empty!\n');
+        process.stderr.write('ERROR: Shift flag is empty!\n'); 
         process.exit(1);
       } else if (!Number.isInteger(parseInt(shift))) {
         process.stderr.write('ERROR: Shift flag must be an integer!\n');

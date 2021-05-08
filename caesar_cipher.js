@@ -1,3 +1,4 @@
+// eslint-disable-next-line node/no-unsupported-features/node-builtins
 import { pipeline } from 'stream';
 import { readStream, writeStream, transformStream} from "./src/streams.js";
 import { input, output, shift, action } from "./src/options.js";
