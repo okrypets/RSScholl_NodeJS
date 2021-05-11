@@ -6,6 +6,8 @@ Firs of all clone this git repo to your machine. For it run in your terminal :
 
 `git clone https://github.com/okrypets/RSScholl_NodeJS.git `
 
+Then checkout to branch `caesar_cipher_task1`.
+
 Then install all dependencies: 
 
 `npm install`
